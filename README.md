@@ -8,7 +8,7 @@ This Software is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-# E-RM multiclock VST/AU/AX plugin.
+# E-RM multiclock VST/AU/AAX plugin.
 
 Creates a 24ppq sync pulse for running host transport, starting at the next 
 available downbeat, which is configurable by setting time signature as a
