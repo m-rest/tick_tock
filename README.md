@@ -1,7 +1,6 @@
 **Copyright (c) 2015-2018 - Maximilian Rest**
 
-Permission is granted to use this software under the terms of GNU General Public License v.3.
-Details of these licenses can be found at: www.gnu.org/licenses
+Permission is granted to use this software under the terms of [GNU General Public License v.3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 This Software is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
