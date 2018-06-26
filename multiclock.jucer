@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="vkcpvs" name="E-RM - multiclock" projectType="audioplug"
+              version="1.0.6" bundleIdentifier="com.erm.multiclock" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="1" buildAU="1" buildRTAS="0" buildAAX="1"
+              pluginName="multiclock" pluginDesc="E-RM - multiclock" pluginManufacturer="E-RM"
+              pluginManufacturerCode="E-RM" pluginCode="mclk" pluginChannelConfigs=""
+              pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="multiclock" pluginRTASCategory="" aaxIdentifier="com.erm.multiclock"
+              pluginAAXCategory="0" jucerVersion="5.3.2" companyName="E-RM Erfindungsb&#252;ro"
+              companyWebsite="www.e-rm.de" pluginIsMidiEffectPlugin="0" companyEmail="info@e-rm.de"
+              buildAUv3="0" pluginVSTCategory="kPlugCategGenerator" pluginFormats="buildVST,buildVST3,buildAU,buildAAX"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              buildStandalone="0" enableIAA="0" pluginVST3Category="Instrument">
+  <MAINGROUP id="DoI95h" name="E-RM - multiclock">
+    <GROUP id="{E01D2853-B9B3-A943-55EA-F387E475F33F}" name="Source">
+      <FILE id="L9Bf1k" name="SyncSamples.h" compile="0" resource="0" file="Source/SyncSamples.h"/>
+      <FILE id="pJQGqo" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="yMJ9Fh" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="du44gO" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="JxWkdi" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="/Users/mrest/Development/SDKs/VST3 SDK/"
+               postbuildCommand="" aaxFolder="" vst3Folder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug - universal - 10.7up" osxSDK="10.13 SDK" osxCompatibility="10.7 SDK"
+                       osxArchitecture="64BitUniversal" optimisation="1" targetName="multiclock_osx_10_7up_dbg_univ"
+                       isDebug="1" cppLanguageStandard="c++11" cppLibType="libstdc++"/>
+        <CONFIGURATION name="Release - 32bit - 10.7up" osxSDK="10.13 SDK" osxCompatibility="10.7 SDK"
+                       osxArchitecture="32BitUniversal" optimisation="3" targetName="multiclock_osx_10_7up_32bit"
+                       isDebug="0" cppLanguageStandard="c++11" cppLibType="libstdc++"/>
+        <CONFIGURATION name="Release - 64bit - 10.7up" osxSDK="10.13 SDK" osxCompatibility="10.7 SDK"
+                       osxArchitecture="64BitIntel" optimisation="3" targetName="multiclock_osx_10_7up_64bit"
+                       isDebug="0" cppLanguageStandard="gnu++11" cppLibType="libstdc++"/>
+        <CONFIGURATION name="Ship Release - 32bit - 10.7up" osxSDK="10.13 SDK" osxCompatibility="10.7 SDK"
+                       osxArchitecture="32BitUniversal" optimisation="3" targetName="Multiclock"
+                       isDebug="0" cppLanguageStandard="c++11" cppLibType="libstdc++"
+                       xcodeVstBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/VST/32bit"
+                       xcodeAudioUnitBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AU/32bit"
+                       xcodeAaxBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AAX/32bit"
+                       vstBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/VST/32bit"
+                       auBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AU/32bit"
+                       aaxBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AAX/32bit"
+                       vst3BinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/VST3/32bit"/>
+        <CONFIGURATION name="Ship Release - 64bit - 10.7up" osxSDK="10.13 SDK" osxCompatibility="10.7 SDK"
+                       osxArchitecture="64BitIntel" optimisation="3" targetName="Multiclock"
+                       isDebug="0" cppLanguageStandard="gnu++11" cppLibType="libstdc++"
+                       xcodeVstBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/VST/64bit"
+                       xcodeAudioUnitBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AU/64bit"
+                       xcodeAaxBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AAX/64bit"
+                       vstBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/VST/64bit"
+                       auBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AU/64bit"
+                       aaxBinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/AAX/64bit"
+                       vst3BinaryLocation="$HOME/Development/E-RM/multiclock/releases/multiclock-plugin/justBuilt/VST3/64bit"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2015 targetFolder="Builds/VisualStudio2015" vst3Folder="" aaxFolder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug - 32bit" targetName="multiclock_win_dbg_32"
+                       winArchitecture="Win32" generateManifest="1" winWarningLevel="4"
+                       optimisation="1" binaryPath="../binaries/"/>
+        <CONFIGURATION isDebug="1" name="Debug - 64bit" targetName="multiclock_win_dbg_64"
+                       generateManifest="1" winWarningLevel="4" optimisation="1" winArchitecture="x64"
+                       binaryPath="../binaries/x64/" useRuntimeLibDLL="1"/>
+        <CONFIGURATION isDebug="0" name="Release - 32bit" targetName="multiclock_win_32"
+                       winArchitecture="Win32" optimisation="3" winWarningLevel="4"
+                       useRuntimeLibDLL="1" generateManifest="1" binaryPath="../binaries/"/>
+        <CONFIGURATION isDebug="0" name="Release - 64bit" targetName="multiclock_win_64"
+                       winArchitecture="x64" optimisation="3" winWarningLevel="4" useRuntimeLibDLL="1"
+                       generateManifest="1" binaryPath="../binaries/x64/"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="0" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+  <LIVE_SETTINGS>
+    <OSX/>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
