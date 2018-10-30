@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="vkcpvs" name="E-RM - multiclock" projectType="audioplug"
-              version="1.0.6" bundleIdentifier="com.erm.multiclock" includeBinaryInAppConfig="1"
+              version="1.0.7" bundleIdentifier="com.erm.multiclock" includeBinaryInAppConfig="1"
               buildVST="1" buildVST3="1" buildAU="1" buildRTAS="0" buildAAX="1"
               pluginName="multiclock" pluginDesc="E-RM - multiclock" pluginManufacturer="E-RM"
               pluginManufacturerCode="E-RM" pluginCode="mclk" pluginChannelConfigs=""
               pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="0"
               pluginSilenceInIsSilenceOut="0" pluginEditorRequiresKeys="0"
               pluginAUExportPrefix="multiclock" pluginRTASCategory="" aaxIdentifier="com.erm.multiclock"
-              pluginAAXCategory="0" jucerVersion="5.3.2" companyName="E-RM Erfindungsb&#252;ro"
+              pluginAAXCategory="0" jucerVersion="5.3.2" companyName="E-RM Erfindungsbuero"
               companyWebsite="www.e-rm.de" pluginIsMidiEffectPlugin="0" companyEmail="info@e-rm.de"
               buildAUv3="0" pluginVSTCategory="kPlugCategGenerator" pluginFormats="buildVST,buildVST3,buildAU,buildAAX"
               pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"

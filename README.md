@@ -17,6 +17,9 @@ plugin parameter.
 ## Changelog
 
 
+**v1.0.7**
+Fixed a bug with DAWs in loop mode. Also removed Umlaut from company name tag towards "E-RM Erfindungsbuero" to prevent reported detection problems with Windows.
+
 **v1.0.6**
 Switched to JUCE 5.3.2. Added feature to resync starting after a time signature 
 change has occured by taking ppqPosSinceLastBarStart into account.

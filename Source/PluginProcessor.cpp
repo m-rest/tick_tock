@@ -216,7 +216,7 @@ void AudioClockAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
       
         // check if ppq info got updated since last block - PT12 updates only every second block for fs>48kHz.
         // if we got no new data, start this block with our own last estimate from the block before
-        if (currentPpqPosition <= lastHostPpqPositionAtBeginning)
+        if (currentPpqPosition == lastHostPpqPositionAtBeginning)
         {
             currentPpqPosition = lastPluginPpqPositionAtEnd;
         }
