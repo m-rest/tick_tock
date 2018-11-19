@@ -88,16 +88,16 @@
                        generateManifest="1" binaryPath="../binaries/x64/"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_gui_extra" path=""/>
-        <MODULEPATH id="juce_gui_basics" path=""/>
-        <MODULEPATH id="juce_graphics" path=""/>
-        <MODULEPATH id="juce_events" path=""/>
-        <MODULEPATH id="juce_data_structures" path=""/>
-        <MODULEPATH id="juce_core" path=""/>
-        <MODULEPATH id="juce_audio_processors" path=""/>
-        <MODULEPATH id="juce_audio_plugin_client" path=""/>
-        <MODULEPATH id="juce_audio_devices" path=""/>
-        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_gui_basics" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_graphics" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_events" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_data_structures" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_core" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_audio_processors" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_audio_devices" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
+        <MODULEPATH id="juce_audio_basics" path="..\..\SDKs\JUCE-5.3.2\JUCE-5.3.2\modules\"/>
       </MODULEPATHS>
     </VS2015>
   </EXPORTFORMATS>
