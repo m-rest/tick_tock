@@ -214,6 +214,9 @@ void AudioClockAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
         double currentPpqPosition = CurrentPosition.ppqPosition;
         double dppqPerSample = bpm / ( 60.0f*SR );
       
+        // wether the host is in cycle mode AND the playhead cycled from end marker to start marker
+        bool hasLooped = CurrentPosition.isLooping && currentPpqPosition < lastHostPpqPositionAtBeginning;      
+      
         // check if ppq info got updated since last block - PT12 updates only every second block for fs>48kHz.
         // if we got no new data, start this block with our own last estimate from the block before
         if (currentPpqPosition == lastHostPpqPositionAtBeginning)
@@ -225,8 +228,16 @@ void AudioClockAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
         // resync current ppqPosition to start of current bar, so we always get the ppq position from the
         // beginning of the current bar. Needed to resync after tempo change and restart of playhead.
         // ALERT: does not work in PT according to JUCE API
-        currentPpqPosition -= CurrentPosition.ppqPositionOfLastBarStart;
-        
+        if(!hasLooped)
+        {
+          currentPpqPosition -= CurrentPosition.ppqPositionOfLastBarStart;
+        }
+        else
+        {
+          // in this block, the playhead went back to the start of the loop
+          // resync accordingly
+          currentPpqPosition = CurrentPosition.ppqLoopStart;
+        }         
         
         DBG(String(currentPpqPosition)+" OUR CURRENT BAR PPQ POS");
 
