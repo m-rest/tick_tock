@@ -236,8 +236,8 @@ void AudioClockAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
         {
           // in this block, the playhead went back to the start of the loop
           // resync accordingly
-          currentPpqPosition = CurrentPosition.ppqLoopStart;
-        }         
+          currentPpqPosition -= CurrentPosition.ppqLoopStart;
+        }
         
         DBG(String(currentPpqPosition)+" OUR CURRENT BAR PPQ POS");
 
