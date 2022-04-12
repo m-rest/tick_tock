@@ -16,6 +16,8 @@ plugin parameter.
 
 ## Changelog
 
+**v1.0.8**
+Updated project to JUCE 6.1.6. Supports Apple Silicon now. Fixed bug in Cubase Loop mode.
 
 **v1.0.7**
 Fixed a bug with DAWs in loop mode. Also removed Umlaut from company name tag towards "E-RM Erfindungsbuero" to prevent reported detection problems with Windows.
