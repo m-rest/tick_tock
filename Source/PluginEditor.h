@@ -52,10 +52,10 @@ public:
 
 private:
     //==============================================================================
-    ScopedPointer<ComboBox> measureBox;
-    ScopedPointer<Label> measureLabel;
+    std::unique_ptr<ComboBox> measureBox;
+    std::unique_ptr<Label> measureLabel;
     Image cachedImage_plugin_logo_jpg;
-    ScopedPointer<HyperlinkButton> websiteLink;
+    std::unique_ptr<HyperlinkButton> websiteLink;
     
     LookAndFeel_V3 myLookAndFeelV3;
     

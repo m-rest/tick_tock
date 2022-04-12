@@ -26,6 +26,15 @@
 #include <juce_gui_extra/juce_gui_extra.h>
 
 
+#if defined (JUCE_PROJUCER_VERSION) && JUCE_PROJUCER_VERSION < JUCE_VERSION
+ /** If you've hit this error then the version of the Projucer that was used to generate this project is
+     older than the version of the JUCE modules being included. To fix this error, re-save your project
+     using the latest version of the Projucer or, if you aren't using the Projucer to manage your project,
+     remove the JUCE_PROJUCER_VERSION define.
+ */
+ #error "This project was last saved using an outdated version of the Projucer! Re-save this project with the latest version to fix this error."
+#endif
+
 #if ! DONT_SET_USING_JUCE_NAMESPACE
  // If your code uses a lot of JUCE classes, then this will obviously save you
  // a lot of typing, but can be disabled by setting DONT_SET_USING_JUCE_NAMESPACE.
@@ -36,7 +45,8 @@
 namespace ProjectInfo
 {
     const char* const  projectName    = "E-RM - multiclock";
-    const char* const  versionString  = "1.0.7";
-    const int          versionNumber  = 0x10007;
+    const char* const  companyName    = "E-RM Erfindungsbuero";
+    const char* const  versionString  = "1.0.8";
+    const int          versionNumber  = 0x10008;
 }
 #endif
