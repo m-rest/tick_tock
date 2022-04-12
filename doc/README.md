@@ -29,7 +29,7 @@
   - replace —password with own app specific password
 
 **9. check status**
-  > xcrun altool --username "apple@e-rm.de" --password "twjy-xong-myem-rgcj" --notarization-info 208e4754-2770-4cac-9ce2-8ba94add223e
+  > xcrun altool --username "apple@e-rm.de" --password "APP SPECIFIC PASSWORD HERE" --notarization-info 208e4754-2770-4cac-9ce2-8ba94add223e
 
 **10. staple notarization to file**
   > xcrun stapler staple Multiclock.component
