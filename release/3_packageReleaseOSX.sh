@@ -153,7 +153,7 @@ pushd ./${BUILDS_PATH}/${VST_PATH} > /dev/null
 echo "packing and moving VST into release tree."
 zip -qr --symlinks ${VST_NAME}.zip ./${VST_NAME}/ -x "*.DS_Store"
 popd > /dev/null
-mv ./${BUILDS_PATH}/${VST32_PATH}/${VST_NAME}.zip $VERSION/VST/
+mv ./${BUILDS_PATH}/${VST_PATH}/${VST_NAME}.zip $VERSION/VST/
 
 pushd ./${BUILDS_PATH}/${VST3_PATH} > /dev/null
 echo "packing and moving VST3 into release tree."
