@@ -1,0 +1,26 @@
+              ___           ___           ___     
+             /  /\         /  /\         /__/\    
+            /  /:/_       /  /::\       |  |::\   
+           /  /:/ /\     /  /:/\:\      |  |:|:\  
+          /  /:/ /:/_   /  /:/~/:/    __|__|:|\:\ 
+         /__/:/ /:/ /\ /__/:/ /:/___ /__/::::| \:\
+         \  \:\/:/ /:/ \  \:\/:::::/ \  \:\~~\__\/
+          \  \::/ /:/   \  \::/~~~~   \  \:\      
+           \  \:\/:/     \  \:\        \  \:\     
+            \  \::/       \  \:\        \  \:\    
+             \__\/         \__\/         \__\/    
+
+                   E-RM Erfindungsbüro 
+               multiclock Audio Sync Plugin
+                      www.e-rm.de
+---------------------------------------------------------
+
+
+To install the multiclock VST-Plugin, please unzip 
+and copy to
+
+    /Library/Audio/Plug-Ins/VST
+
+or 
+
+    /Users/$Username/Library/Audio/Plug-Ins/VST 

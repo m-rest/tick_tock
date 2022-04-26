@@ -28,7 +28,8 @@ AudioClockEditor::AudioClockEditor (AudioClockAudioProcessor* ownerFilter)
     LookAndFeel::setDefaultLookAndFeel(&myLookAndFeelV3);
     
     // add graphic elements to plugin editor
-    addAndMakeVisible (measureBox = new ComboBox ("Time Signature"));
+    measureBox.reset(new ComboBox ("Time Signature"));
+    addAndMakeVisible (measureBox.get());
     measureBox->setEditableText (false);
     measureBox->setJustificationType (Justification::centredLeft);
     measureBox->setTextWhenNoChoicesAvailable (TRANS("(no choices)"));
@@ -64,14 +65,16 @@ AudioClockEditor::AudioClockEditor (AudioClockAudioProcessor* ownerFilter)
     measureBox->addItem (TRANS("32/8"), 30);
     measureBox->addListener (this);
 
-    addAndMakeVisible (measureLabel = new Label ("tSig Label", TRANS("Time Signature")));
+    measureLabel.reset(new Label ("tSig Label", TRANS("Time Signature")));
+    addAndMakeVisible (measureLabel.get());
     measureLabel->setFont (Font (15.00f, Font::plain));
     measureLabel->setJustificationType (Justification::centredLeft);
     measureLabel->setEditable (false, false, false);
     measureLabel->setColour (TextEditor::textColourId, Colours::red);
     measureLabel->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
     
-    addAndMakeVisible (websiteLink = new HyperlinkButton(String("E-RM Erfindungsbuero"), URL("http://www.e-rm.de")));
+    websiteLink.reset(new HyperlinkButton(String("E-RM Erfindungsbuero"), URL("http://www.e-rm.de")));
+    addAndMakeVisible(websiteLink.get());
     websiteLink->changeWidthToFitText();
     websiteLink->setFont( Font(10.0f), false, Justification::bottomLeft);
 
@@ -133,7 +136,7 @@ void AudioClockEditor::resized()
 
 void AudioClockEditor::comboBoxChanged( ComboBox* comboBoxThatHasChanged )
 {
-    if (comboBoxThatHasChanged == measureBox)
+    if (comboBoxThatHasChanged == measureBox.get())
     {
         // normalize selected ID by number of elements to store parameter within 0..1 range (->Bitwig!)
         float param = (float)((float)measureBox->getSelectedId() / (float)measureBox->getNumItems());

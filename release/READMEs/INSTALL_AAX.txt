@@ -1,0 +1,22 @@
+              ___           ___           ___     
+             /  /\         /  /\         /__/\    
+            /  /:/_       /  /::\       |  |::\   
+           /  /:/ /\     /  /:/\:\      |  |:|:\  
+          /  /:/ /:/_   /  /:/~/:/    __|__|:|\:\ 
+         /__/:/ /:/ /\ /__/:/ /:/___ /__/::::| \:\
+         \  \:\/:/ /:/ \  \:\/:::::/ \  \:\~~\__\/
+          \  \::/ /:/   \  \::/~~~~   \  \:\      
+           \  \:\/:/     \  \:\        \  \:\     
+            \  \::/       \  \:\        \  \:\    
+             \__\/         \__\/         \__\/    
+
+                   E-RM Erfindungsbüro 
+               multiclock Audio Sync Plugin
+                      www.e-rm.de
+---------------------------------------------------------
+
+
+To install the multiclock AAX-Plugin, please unzip 
+and copy to
+
+    /Library/Application Support/Avid/Audio/Plug-Ins
