@@ -96,7 +96,7 @@ private:
     
     double lastPluginPpqPositionAtEnd;
     double lastHostPpqPositionAtBeginning;
-    
+    bool _triggerCubaseBugCompensation = false;
     bool CreatePulses;
     bool PlaySample;
     bool AccelTicks;
