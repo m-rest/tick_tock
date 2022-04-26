@@ -5,11 +5,11 @@
 
 ## required folder structure:
 
- -work folder
-   -justBuilt
-     -AAX/
-       -signed
-     -AU/
-     -VST/
-     -VST3/
-   -READMEs
+ - work folder/
+   - justBuild/
+     - AAX/
+       - signed/
+     - AU/
+     - VST/
+     - VST3/
+   - READMEs
