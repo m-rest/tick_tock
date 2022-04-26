@@ -195,12 +195,6 @@ void AudioClockAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
     // Calculate sync stream only if we are playing or recording
     if ( (CurrentPosition.isPlaying) || (CurrentPosition.isRecording) )
     {
-        
-        DBG(String(CurrentPosition.ppqPositionOfLastBarStart)+" ppqPosofLastBarStart");
-        DBG(String(CurrentPosition.ppqPosition)+" ppqPos");
-
-        
-        
         // initialize ticks per bar and anti-mute-noise phase
         uint32_t _Measure = Measure.get();
         double TicksPerBar = 12.0f*( (double)_Measure + 2.0f );
@@ -228,20 +222,31 @@ void AudioClockAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuff
         // resync current ppqPosition to start of current bar, so we always get the ppq position from the
         // beginning of the current bar. Needed to resync after tempo change and restart of playhead.
         // ALERT: does not work in PT according to JUCE API
+        // in cubase 12(only PC) CurrentPosition.ppqPositionOfLastBarStart is 
+        // sometimes wrong in the first buffer after restart of a cycle
         if(!hasLooped)
         {
           currentPpqPosition -= CurrentPosition.ppqPositionOfLastBarStart;
+          if (_triggerCubaseBugCompensation) {
+              if (currentPpqPosition < 0.f) {
+                  currentPpqPosition = CurrentPosition.ppqPosition;
+                  int intPart = (int)currentPpqPosition;
+                  currentPpqPosition -= ((double)intPart);
+              }
+              _triggerCubaseBugCompensation = false;
+          }
         }
         else
         {
           // in this block, the playhead went back to the start of the loop
           // resync accordingly
-          currentPpqPosition -= CurrentPosition.ppqLoopStart;
+          if (currentPpqPosition >= 0.f) {
+              int intPart = (int)currentPpqPosition;
+              currentPpqPosition -= ((double)intPart);
+              _triggerCubaseBugCompensation = true;
+          }
         }
-        
-        DBG(String(currentPpqPosition)+" OUR CURRENT BAR PPQ POS");
-
-       
+              
         // sample loop
         for (int i = 0; i < buffer.getNumSamples(); i++)
         {
