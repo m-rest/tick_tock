@@ -1,4 +1,4 @@
-**Copyright (c) 2015-2018 - Maximilian Rest**
+**Copyright (c) 2015-2022 - Maximilian Rest**
 
 Permission is granted to use this software under the terms of [GNU General Public License v.3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
