@@ -16,6 +16,10 @@ plugin parameter.
 
 ## Changelog
 
+**v1.0.9**
+Cubase Loop Bug fixed pt. 2
+(currently no AAX version possible for OSX due to missing SDK from Avid. AAX version for Windows pending compilation, not done yet)
+
 **v1.0.8**
 Updated project to JUCE 6.1.6. Supports Apple Silicon now. Fixed bug in Cubase Loop mode on OSX
 

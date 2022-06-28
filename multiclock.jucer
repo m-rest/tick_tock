@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="vkcpvs" name="E-RM - multiclock" projectType="audioplug"
-              version="1.0.8" bundleIdentifier="com.erm.multiclock" includeBinaryInAppConfig="1"
+              version="1.0.9b" bundleIdentifier="com.erm.multiclock" includeBinaryInAppConfig="1"
               buildVST="0" buildVST3="1" buildAU="0" buildRTAS="0" buildAAX="0"
               pluginName="multiclock" pluginDesc="E-RM - multiclock" pluginManufacturer="E-RM"
               pluginManufacturerCode="E-RM" pluginCode="mclk" pluginChannelConfigs=""
